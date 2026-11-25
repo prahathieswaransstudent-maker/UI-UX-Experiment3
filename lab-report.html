@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab Report — Heuristic Evaluation and A/B Testing</title>
+  <style>
+    :root { --ink:#1b2433; --blue:#315efb; --muted:#667085; --line:#dfe4ec; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#eef1f5; font-family:Arial,"Segoe UI",sans-serif; }
+    .toolbar { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:12px 24px; background:white; border-bottom:1px solid var(--line); }
+    .toolbar a, .toolbar button { border:0; border-radius:6px; padding:9px 12px; color:white; background:var(--blue); text-decoration:none; font-weight:700; }
+    .page { width:210mm; min-height:297mm; margin:18px auto; padding:18mm 16mm; background:white; box-shadow:0 4px 20px #cbd1da; }
+    h1 { margin:8px 0 10px; font-size:28px; }
+    h2 { margin:24px 0 8px; padding-bottom:6px; border-bottom:2px solid var(--ink); font-size:17px; }
+    h3 { margin:12px 0 5px; font-size:14px; }
+    p, li, td, th { font-size:11.5px; line-height:1.55; }
+    p { margin:5px 0 8px; }
+    ul, ol { margin:5px 0 10px; padding-left:20px; }
+    table { width:100%; border-collapse:collapse; margin:8px 0; }
+    th, td { border:1px solid var(--line); padding:7px; text-align:left; vertical-align:top; }
+    th { background:#f2f4f8; }
+    .cover { min-height:240mm; display:flex; flex-direction:column; }
+    .cover-top { display:flex; justify-content:space-between; color:var(--muted); font-size:11px; }
+    .title-block { margin:auto 0; text-align:center; }
+    .title-block h1 { margin:12px 0; font-size:34px; }
+    .title-block p { font-size:14px; }
+    .meta { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px; }
+    .meta div { padding:12px; border:1px solid var(--line); }
+    .page-break { break-before:page; }
+    .label { color:var(--blue); font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .card { padding:10px; border:1px solid var(--line); border-radius:6px; }
+    .card strong { display:block; margin-bottom:5px; }
+    .formula { padding:10px; border-left:4px solid var(--blue); background:#f4f6fa; font-family:"Courier New",monospace; }
+    @media print {
+      body { background:white; }
+      .toolbar { display:none; }
+      .page { width:auto; min-height:0; margin:0; padding:12mm 14mm; box-shadow:none; }
+      .cover { min-height:273mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">Open interactive prototype</a>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <article class="page">
+    <section class="cover">
+      <div class="cover-top"><span>FOUNDATION: UI &amp; UX</span><span>TERM 2 • EXPERIMENT 3</span></div>
+      <div class="title-block">
+        <p class="label">Lab Report</p>
+        <h1>Heuristic Evaluation of an Existing Website or App</h1>
+        <p>Competitive comparison, redesign recommendations, and A/B testing</p>
+      </div>
+      <div class="meta">
+        <div><strong>Application A</strong><br>ShopSphere</div>
+        <div><strong>Application B</strong><br>MarketCart</div>
+        <div><strong>Method</strong><br>Nielsen heuristics + controlled A/B task</div>
+        <div><strong>Primary metric</strong><br>Task completion and completion time</div>
+      </div>
+    </section>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">1. Aim</p>
+    <h1>Heuristic Evaluation &amp; A/B Testing</h1>
+    <p>To compare the usability of two shopping application interfaces, identify heuristic violations, implement improved designs, and measure whether the redesign changes user behaviour.</p>
+
+    <h2>2. Objective</h2>
+    <ol>
+      <li>Evaluate ShopSphere and MarketCart against Nielsen’s ten usability heuristics.</li>
+      <li>Rank usability issues by severity and map each to a design change.</li>
+      <li>Create original and improved variants for both applications.</li>
+      <li>Test the task “search for wireless headphones and add the best-rated item to the cart.”</li>
+      <li>Compare completion rate and task time for original and improved variants.</li>
+    </ol>
+
+    <h2>3. Applications Compared</h2>
+    <div class="cards">
+      <div class="card"><strong>A — ShopSphere</strong>Low-density e-commerce interface. Strengths: familiar structure and clear category navigation. Weaknesses: small search affordance and limited status feedback.</div>
+      <div class="card"><strong>B — MarketCart</strong>Promotion-heavy marketplace interface. Strengths: visible deals and broad discovery. Weaknesses: denser hierarchy, inconsistent actions, and weaker visual grouping.</div>
+    </div>
+
+    <h2>4. Heuristic Evaluation Method</h2>
+    <p>Four evaluators would independently complete the search-and-cart task and score the product pages. The assessment uses Nielsen’s 1–5 severity scale: 1 cosmetic, 2 minor, 3 major, 4 usability catastrophe, and 5 unusable. Consensus findings are reported below.</p>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">5. Findings</p>
+    <h1>Nielsen Heuristic Scores</h1>
+    <table>
+      <thead><tr><th>Heuristic</th><th>ShopSphere original</th><th>MarketCart original</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr><td>1. Visibility of status</td><td>3/5</td><td>2/5</td><td>Add-to-cart feedback is not prominent in every state.</td></tr>
+        <tr><td>2. Match with real world</td><td>4/5</td><td>3/5</td><td>Labels are familiar; Marketplace promo language is dense.</td></tr>
+        <tr><td>3. User control</td><td>4/5</td><td>3/5</td><td>Back navigation exists but could be more persistent.</td></tr>
+        <tr><td>4. Consistency</td><td>3/5</td><td>2/5</td><td>Search and action placement vary by screen state.</td></tr>
+        <tr><td>5. Error prevention</td><td>4/5</td><td>3/5</td><td>Users need explicit stock and action confirmation.</td></tr>
+        <tr><td>6. Recognition</td><td>3/5</td><td>2/5</td><td>Useful options are not all visible near the task.</td></tr>
+        <tr><td>7. Flexibility</td><td>4/5</td><td>3/5</td><td>Categories are useful but search shortcuts are weak.</td></tr>
+        <tr><td>8. Aesthetic/minimalism</td><td>4/5</td><td>2/5</td><td>Dense deal layout creates unnecessary visual competition.</td></tr>
+        <tr><td>9. Error diagnosis</td><td>3/5</td><td>2/5</td><td>No clear guidance for incorrect or empty searches.</td></tr>
+        <tr><td>10. Help/documentation</td><td>3/5</td><td>3/5</td><td>Support is not part of the primary flow.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Priority Issues</h2>
+    <table>
+      <thead><tr><th>Issue</th><th>Severity</th><th>Violated heuristic</th><th>Design change</th></tr></thead>
+      <tbody>
+        <tr><td>Search is visually weak</td><td>3</td><td>Recognition / efficiency</td><td>Prominent labelled search and shortcut text</td></tr>
+        <tr><td>Cart feedback is not obvious</td><td>3</td><td>Visibility of status</td><td>Persistent cart counter and confirmation toast</td></tr>
+        <tr><td>Marketplace hierarchy is crowded</td><td>4</td><td>Aesthetic / consistency</td><td>Consistent cards, spacing, and primary action</td></tr>
+        <tr><td>Back location is subtle</td><td>2</td><td>User control</td><td>Persistent text-style Back control</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">6. Redesign</p>
+    <h1>Implemented Changes</h1>
+    <h2>Common improvements for both variants</h2>
+    <ul>
+      <li>Clear, large search field with task-related placeholder text.</li>
+      <li>Consistent blue primary action for the main task.</li>
+      <li>Persistent cart count and completion confirmation.</li>
+      <li>Visible task progress and product state feedback.</li>
+      <li>Back navigation retained during product detail viewing.</li>
+    </ul>
+
+    <h2>Application A — ShopSphere</h2>
+    <p><strong>Original:</strong> simple, familiar layout with light hierarchy and a medium-sized search field.</p>
+    <p><strong>Improved:</strong> stronger search border, taller header, branded primary cart action, and an explicit “Search wireless headphones” affordance.</p>
+
+    <h2>Application B — MarketCart</h2>
+    <p><strong>Original:</strong> warmer promotional treatment, denser card spacing, and a secondary add action placed away from the primary visual flow.</p>
+    <p><strong>Improved:</strong> reduced visual density, standardized card height, consistent action placement, stronger search affordance, and clear cart feedback.</p>
+
+    <h2>Implementation</h2>
+    <p>The interactive prototype is implemented in HTML, CSS, and JavaScript. It supports competitor and variant switches, timed task completion, progress tracking, a cart count, and persistent local metrics.</p>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">7. A/B Experiment</p>
+    <h1>Experimental Design</h1>
+    <h2>Hypothesis</h2>
+    <p><strong>H0:</strong> The improved variant does not change task completion or time.<br><strong>H1:</strong> The improved variant increases task completion and reduces time.</p>
+
+    <h2>Independent variable</h2>
+    <p>Interface variant: <strong>Original</strong> or <strong>Improved</strong>.</p>
+
+    <h2>Dependent variables</h2>
+    <ul>
+      <li>Task completion (yes/no)</li>
+      <li>Task completion time (seconds)</li>
+      <li>Number of attempts</li>
+    </ul>
+
+    <h2>Procedure</h2>
+    <ol>
+      <li>Recruit at least 20 participants: 10 per application, with 5 assigned to Original and 5 to Improved.</li>
+      <li>Randomize the competitor and variant conditions. Use balanced participant IDs.</li>
+      <li>Provide only the task statement; do not explain interface controls.</li>
+      <li>Click “Start timed task,” then search, open, and add the highest-rated item.</li>
+      <li>Record automatic metrics and repeat once after a short break if a learning effect is being tested.</li>
+    </ol>
+
+    <h2>Analysis</h2>
+    <p>Compare completion rates using a chi-square test or Fisher’s exact test for small samples. Compare task time using a t-test if approximately normal, or Mann–Whitney U if not. Report effect size and a 95% confidence interval.</p>
+    <div class="formula">Relative improvement = ((Improved rate - Original rate) / Original rate) × 100</div>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">8. Results Template</p>
+    <h1>A/B Results</h1>
+    <p>Use the interactive prototype to collect a minimum of 20–30 participants. Export or copy the table below into the final submitted report. Do not treat the prototype’s initial output as real test data.</p>
+
+    <h2>Group Summary</h2>
+    <table>
+      <thead><tr><th>App / Variant</th><th>Participants</th><th>Completed</th><th>Completion rate</th><th>Mean time</th></tr></thead>
+      <tbody>
+        <tr><td>A — Original</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>A — Improved</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>B — Original</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>B — Improved</td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h2>Impact Assessment</h2>
+    <table>
+      <thead><tr><th>Metric</th><th>Original</th><th>Improved</th><th>Difference</th><th>Interpretation</th></tr></thead>
+      <tbody>
+        <tr><td>Completion rate</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Mean task time</td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h2>Expected Behaviour Impact</h2>
+    <p>The improved variants are expected to reduce uncertainty at search and cart stages, because the search affordance is more visible and the final action is consistently prioritized. This should increase completion and reduce average task time.</p>
+
+    <h2>Recommended Statistical Conclusion</h2>
+    <p>Conclude a significant positive effect only when p &lt; .05 and the confidence interval does not cross zero. If the result is not significant, describe it as inconclusive and retain the improved design only as a user-tested candidate.</p>
+  </article>
+
+  <article class="page page-break">
+    <p class="label">9. Conclusion</p>
+    <h1>Result</h1>
+    <p>The study identified search discoverability, inconsistent cart feedback, dense visual hierarchy, and weak action consistency as priority usability issues for the compared shopping interfaces.</p>
+    <p>Both prototypes now include prominent search, clear progress, persistent cart status, consistent actions, and explicit product-state navigation. The A/B runner measures completion and task time so both ShopSphere and MarketCart can be compared across original and improved variants.</p>
+
+    <h2>Final Submission Checklist</h2>
+    <ul>
+      <li>GitHub repository URL placed in the LMS submission text.</li>
+      <li>Interactive prototype accessible from the repository README and index page.</li>
+      <li>Lab report PDF attached to the submission.</li>
+      <li>Real participants, raw observations, and completed A/B result tables inserted before final submission.</li>
+    </ul>
+
+    <h2>Repository Links</h2>
+    <p>Add the deployed prototype URL and GitHub repository URL here after publishing.</p>
+  </article>
+</body>
+</html>

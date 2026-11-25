@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UX Lab — Shopping App Heuristic Evaluation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">UI/UX Experiment 3</p>
+      <h1>Heuristic Evaluation &amp; A/B Study</h1>
+    </div>
+    <nav aria-label="Main navigation">
+      <button class="nav-button active" data-view="experiment">Experiment</button>
+      <button class="nav-button" data-view="analysis">Heuristic analysis</button>
+      <a class="nav-button" href="lab-report.html">Lab report</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="experiment" class="view active" aria-labelledby="experiment-title">
+      <div class="control-strip">
+        <div>
+          <p class="eyebrow">Participant setup</p>
+          <h2 id="experiment-title">Run the comparison task</h2>
+        </div>
+        <div class="controls">
+          <label>Competitor
+            <select id="competitor">
+              <option value="a">A — ShopSphere</option>
+              <option value="b">B — MarketCart</option>
+            </select>
+          </label>
+          <label>Variant
+            <select id="variant">
+              <option value="original">Original</option>
+              <option value="improved">Improved</option>
+            </select>
+          </label>
+          <button id="reset-experiment" class="secondary">Reset metrics</button>
+        </div>
+      </div>
+
+      <div class="prototype-shell">
+        <aside class="task-card" aria-live="polite">
+          <p class="step-label">User task</p>
+          <h3>Find “wireless headphones” and add the best-rated item to cart.</h3>
+          <ol class="task-progress">
+            <li id="step-search">Search for headphones</li>
+            <li id="step-open">Open a product</li>
+            <li id="step-cart">Add to cart</li>
+          </ol>
+          <div class="timer"><span>Task time</span><strong id="timer">0.0s</strong></div>
+          <button id="start-task" class="primary">Start timed task</button>
+        </aside>
+
+        <section id="prototype" class="store" aria-label="Shopping app prototype">
+          <div class="store-header">
+            <a class="brand" href="#" aria-label="Home"><span class="brand-mark"></span><strong id="brand-name">ShopSphere</strong></a>
+            <label class="search" aria-label="Search products">
+              <span aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Search for products">
+            </label>
+            <button class="icon-button" aria-label="Account">♙</button>
+            <button id="cart-button" class="cart-button" aria-label="Cart">Cart <span id="cart-count">0</span></button>
+          </div>
+
+          <div class="category-row" aria-label="Product categories">
+            <button class="category active">All</button>
+            <button class="category">Electronics</button>
+            <button class="category">Fashion</button>
+            <button class="category">Home</button>
+            <button class="category">Deals</button>
+          </div>
+
+          <div id="home-state" class="home-state">
+            <div class="hero">
+              <div>
+                <p>Today’s highlight</p>
+                <h2>Sound that moves with you</h2>
+                <button id="shop-now">Shop headphones</button>
+              </div>
+              <div class="headphone-art" aria-label="Wireless headphones illustration">◉</div>
+            </div>
+            <h3>Popular right now</h3>
+            <div class="product-grid" id="product-grid">
+              <article class="product-card" data-product="Wireless Headphones">
+                <button class="product-image headphones" aria-label="View Wireless Headphones">◉</button>
+                <p class="product-name">Wireless Headphones</p>
+                <p class="rating">★ 4.8 <span>(1,240 reviews)</span></p>
+                <p class="price">₹1,799</p>
+                <button class="quick-add" data-name="Wireless Headphones">Add</button>
+              </article>
+              <article class="product-card" data-product="Smart Watch">
+                <button class="product-image watch" aria-label="View Smart Watch">◷</button>
+                <p class="product-name">Smart Watch</p>
+                <p class="rating">★ 4.5 <span>(860 reviews)</span></p>
+                <p class="price">₹2,499</p>
+              </article>
+              <article class="product-card" data-product="Portable Speaker">
+                <button class="product-image speaker" aria-label="View Portable Speaker">◒</button>
+                <p class="product-name">Portable Speaker</p>
+                <p class="rating">★ 4.3 <span>(520 reviews)</span></p>
+                <p class="price">₹1,299</p>
+              </article>
+            </div>
+          </div>
+
+          <div id="product-state" class="product-state" hidden>
+            <button id="back-products" class="text-button">← Back to results</button>
+            <div class="detail-layout">
+              <div class="detail-art headphones">◉</div>
+              <div class="detail-info">
+                <p class="stock">In stock</p>
+                <h2>Wireless Headphones</h2>
+                <p class="rating">★ 4.8 <span>(1,240 verified reviews)</span></p>
+                <p class="price">₹1,799 <span class="old-price">₹2,499</span></p>
+                <p>Active noise cancellation, 40-hour battery, and comfortable over-ear cushions.</p>
+                <button id="add-to-cart" class="primary full">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="results" aria-labelledby="results-title">
+        <div>
+          <p class="eyebrow">Experiment metrics</p>
+          <h2 id="results-title">Behavior log</h2>
+        </div>
+        <div class="metric-grid">
+          <article><span>Task completion</span><strong id="completion-rate">0%</strong></article>
+          <article><span>Average time</span><strong id="average-time">—</strong></article>
+          <article><span>Attempts</span><strong id="attempt-count">0</strong></article>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Run</th><th>App</th><th>Variant</th><th>Status</th><th>Time</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="analysis" class="view" aria-labelledby="analysis-title">
+      <div class="report-hero">
+        <p class="eyebrow">Nielsen’s 10 heuristics</p>
+        <h2 id="analysis-title">Competitive UX review</h2>
+        <p>Evaluation of two fictional shopping experiences based on common patterns observed in established e-commerce apps.</p>
+      </div>
+      <div class="comparison-grid">
+        <article>
+          <div class="app-heading"><span class="letter">A</span><div><h3>ShopSphere</h3><p>Original e-commerce experience</p></div></div>
+          <ul>
+            <li><strong>Strength:</strong> Clear category hierarchy and familiar cart placement.</li>
+            <li><strong>Issue:</strong> Small search affordance and no visible result count.</li>
+            <li><strong>Severity:</strong> Medium — 3/4.</li>
+            <li><strong>Fix:</strong> Add a prominent labelled search and persistent filtered context.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="app-heading"><span class="letter">B</span><div><h3>MarketCart</h3><p>Busy marketplace experience</p></div></div>
+          <ul>
+            <li><strong>Strength:</strong> Strong promotions and dense product discovery.</li>
+            <li><strong>Issue:</strong> Weak visual hierarchy and inconsistent add-to-cart placement.</li>
+            <li><strong>Severity:</strong> High — 4/4.</li>
+            <li><strong>Fix:</strong> Simplify hierarchy and place the primary action consistently.</li>
+          </ul>
+        </article>
+      </div>
+      <h3 class="section-title">Nielsen heuristic scoring</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Heuristic</th><th>ShopSphere</th><th>MarketCart</th><th>Recommended change</th></tr></thead>
+          <tbody>
+            <tr><td>Visibility of system status</td><td>3/5</td><td>2/5</td><td>Progressive feedback and cart confirmation</td></tr>
+            <tr><td>Match with real world</td><td>4/5</td><td>3/5</td><td>Plain-language labels</td></tr>
+            <tr><td>User control</td><td>4/5</td><td>3/5</td><td>Persistent back and undo</td></tr>
+            <tr><td>Consistency</td><td>3/5</td><td>2/5</td><td>Standardize search and product actions</td></tr>
+            <tr><td>Error prevention</td><td>4/5</td><td>3/5</td><td>Disable duplicate adds and show stock</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
