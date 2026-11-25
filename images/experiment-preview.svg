@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">UX Lab interactive experiment preview</title>
+  <desc id="desc">The experiment page with competitor and variant selectors, task progress, shopping store prototype, and metrics.</desc>
+  <rect width="1200" height="650" rx="22" fill="#f4f6fa"/>
+  <rect width="1200" height="88" rx="22" fill="#ffffff"/>
+  <path d="M0 88h1200" stroke="#e8ecf2"/>
+  <text x="44" y="34" fill="#315efb" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">UI/UX EXPERIMENT 3</text>
+  <text x="44" y="65" fill="#19212f" font-family="Arial,sans-serif" font-size="25" font-weight="700">Heuristic Evaluation &amp; A/B Study</text>
+  <rect x="784" y="25" width="142" height="40" rx="9" fill="#edf2ff"/>
+  <text x="813" y="51" fill="#315efb" font-family="Arial,sans-serif" font-size="15" font-weight="700">Experiment</text>
+  <text x="953" y="50" fill="#667085" font-family="Arial,sans-serif" font-size="15">Heuristic analysis</text>
+
+  <text x="44" y="130" fill="#315efb" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">PARTICIPANT SETUP</text>
+  <text x="44" y="162" fill="#19212f" font-family="Arial,sans-serif" font-size="23" font-weight="700">Run the comparison task</text>
+  <rect x="740" y="112" width="174" height="45" rx="8" fill="#fff" stroke="#d7deea"/>
+  <text x="755" y="140" fill="#19212f" font-family="Arial,sans-serif" font-size="14">A — ShopSphere ▾</text>
+  <rect x="927" y="112" width="151" height="45" rx="8" fill="#fff" stroke="#d7deea"/>
+  <text x="942" y="140" fill="#19212f" font-family="Arial,sans-serif" font-size="14">Improved ▾</text>
+  <rect x="1090" y="112" width="82" height="45" rx="8" fill="#fff" stroke="#d7deea"/>
+  <text x="1102" y="139" fill="#19212f" font-family="Arial,sans-serif" font-size="12">Reset</text>
+
+  <rect x="44" y="184" width="270" height="340" rx="14" fill="#fff" stroke="#e8ecf2"/>
+  <text x="66" y="220" fill="#315efb" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">USER TASK</text>
+  <text x="66" y="254" fill="#19212f" font-family="Arial,sans-serif" font-size="17" font-weight="700">Find “wireless</text>
+  <text x="66" y="278" fill="#19212f" font-family="Arial,sans-serif" font-size="17" font-weight="700">headphones” and add</text>
+  <text x="66" y="302" fill="#19212f" font-family="Arial,sans-serif" font-size="17" font-weight="700">the best-rated item.</text>
+  <circle cx="76" cy="340" r="9" fill="#eaf7f3"/>
+  <path d="m72 340 3 3 6-7" fill="none" stroke="#147d64" stroke-width="2"/>
+  <text x="96" y="345" fill="#147d64" font-family="Arial,sans-serif" font-size="14">Search for headphones</text>
+  <circle cx="76" cy="374" r="9" fill="#f1f3f7"/>
+  <text x="96" y="379" fill="#667085" font-family="Arial,sans-serif" font-size="14">Open a product</text>
+  <circle cx="76" cy="408" r="9" fill="#f1f3f7"/>
+  <text x="96" y="413" fill="#667085" font-family="Arial,sans-serif" font-size="14">Add to cart</text>
+  <path d="M66 438h224" stroke="#e8ecf2"/>
+  <text x="66" y="466" fill="#667085" font-family="Arial,sans-serif" font-size="13">Task time</text>
+  <text x="248" y="466" fill="#19212f" font-family="Arial,sans-serif" font-size="16" font-weight="700">12.4s</text>
+  <rect x="66" y="484" width="224" height="28" rx="7" fill="#315efb"/>
+  <text x="127" y="503" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Task in progress</text>
+
+  <rect x="330" y="184" width="842" height="340" rx="14" fill="#fff" stroke="#e8ecf2"/>
+  <rect x="330" y="184" width="842" height="58" rx="14" fill="#fff"/>
+  <path d="M330 242h842" stroke="#e8ecf2"/>
+  <rect x="353" y="199" width="30" height="30" rx="8" fill="#315efb"/>
+  <text x="395" y="221" fill="#19212f" font-family="Arial,sans-serif" font-size="16" font-weight="700">ShopSphere</text>
+  <rect x="520" y="196" width="436" height="36" rx="8" fill="#fff" stroke="#315efb" stroke-width="2"/>
+  <text x="540" y="220" fill="#667085" font-family="Arial,sans-serif" font-size="14">⌕  Search wireless headphones</text>
+  <rect x="1071" y="196" width="78" height="36" rx="8" fill="#315efb"/>
+  <text x="1088" y="220" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Cart  1</text>
+  <rect x="352" y="257" width="798" height="92" rx="12" fill="#e8edff"/>
+  <text x="375" y="284" fill="#315efb" font-family="Arial,sans-serif" font-size="12" font-weight="700">TODAY’S HIGHLIGHT</text>
+  <text x="375" y="314" fill="#19212f" font-family="Arial,sans-serif" font-size="23" font-weight="700">Sound that moves with you</text>
+  <rect x="375" y="324" width="118" height="30" rx="7" fill="#19212f"/>
+  <text x="390" y="344" fill="#fff" font-family="Arial,sans-serif" font-size="12">Shop headphones</text>
+  <circle cx="1076" cy="304" r="38" fill="#fff" stroke="#dfe6ff" stroke-width="10"/>
+  <text x="1058" y="316" fill="#315efb" font-family="Arial,sans-serif" font-size="34">◉</text>
+  <text x="352" y="381" fill="#19212f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Popular right now</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="352" y="394" width="251" height="110" rx="10" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="366" y="405" width="66" height="66" rx="8" fill="#f1f3ff"/>
+    <text x="382" y="451" fill="#315efb" font-size="37">◉</text>
+    <text x="445" y="419" fill="#19212f" font-size="13" font-weight="700">Wireless Headphones</text>
+    <text x="445" y="443" fill="#e28a00" font-size="12">★ 4.8 (1,240 reviews)</text>
+    <text x="445" y="468" fill="#19212f" font-size="14" font-weight="700">₹1,799</text>
+    <rect x="535" y="477" width="55" height="21" rx="6" fill="#19212f"/>
+    <text x="550" y="492" fill="#fff" font-size="11">Add</text>
+    <rect x="615" y="394" width="251" height="110" rx="10" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="629" y="405" width="66" height="66" rx="8" fill="#fff4df"/>
+    <text x="648" y="451" fill="#9a5a21" font-size="37">◷</text>
+    <text x="708" y="419" fill="#19212f" font-size="13" font-weight="700">Smart Watch</text>
+    <text x="708" y="443" fill="#e28a00" font-size="12">★ 4.5 (860 reviews)</text>
+    <text x="708" y="468" fill="#19212f" font-size="14" font-weight="700">₹2,499</text>
+    <rect x="878" y="394" width="272" height="110" rx="10" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="892" y="405" width="66" height="66" rx="8" fill="#eaf7f3"/>
+    <text x="912" y="451" fill="#147d64" font-size="37">◒</text>
+    <text x="970" y="419" fill="#19212f" font-size="13" font-weight="700">Portable Speaker</text>
+    <text x="970" y="443" fill="#e28a00" font-size="12">★ 4.3 (520 reviews)</text>
+    <text x="970" y="468" fill="#19212f" font-size="14" font-weight="700">₹1,299</text>
+  </g>
+  <text x="44" y="580" fill="#315efb" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">BEHAVIOR LOG</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="44" y="594" width="352" height="42" rx="8" fill="#fff"/>
+    <text x="62" y="620" fill="#667085" font-size="12">Task completion</text>
+    <text x="337" y="621" fill="#19212f" font-size="17" font-weight="700">80%</text>
+    <rect x="411" y="594" width="352" height="42" rx="8" fill="#fff"/>
+    <text x="429" y="620" fill="#667085" font-size="12">Average time</text>
+    <text x="704" y="621" fill="#19212f" font-size="17" font-weight="700">18.6s</text>
+    <rect x="778" y="594" width="394" height="42" rx="8" fill="#fff"/>
+    <text x="796" y="620" fill="#667085" font-size="12">Attempts</text>
+    <text x="1130" y="621" fill="#19212f" font-size="17" font-weight="700">10</text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Original and improved shopping app variants</title>
+  <desc id="desc">Side-by-side visual comparison showing the original dense marketplace design and improved clear search and consistent cart actions.</desc>
+  <rect width="1200" height="500" rx="22" fill="#f4f6fa"/>
+  <text x="48" y="57" fill="#19212f" font-family="Arial,sans-serif" font-size="26" font-weight="700">A/B design comparison</text>
+  <text x="48" y="84" fill="#667085" font-family="Arial,sans-serif" font-size="15">Same shopping task, two interface variants</text>
+  <rect x="48" y="112" width="530" height="342" rx="16" fill="#fff" stroke="#e8ecf2"/>
+  <rect x="622" y="112" width="530" height="342" rx="16" fill="#fff" stroke="#d9e2ff"/>
+  <rect x="72" y="136" width="34" height="34" rx="9" fill="#7c4d11"/>
+  <text x="84" y="159" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">A</text>
+  <text x="120" y="159" fill="#19212f" font-family="Arial,sans-serif" font-size="19" font-weight="700">Original — MarketCart</text>
+  <rect x="646" y="136" width="34" height="34" rx="9" fill="#315efb"/>
+  <text x="658" y="159" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">B</text>
+  <text x="694" y="159" fill="#19212f" font-family="Arial,sans-serif" font-size="19" font-weight="700">Improved — MarketCart</text>
+
+  <g font-family="Arial,sans-serif">
+    <rect x="72" y="188" width="482" height="46" rx="8" fill="#fffaf1"/>
+    <text x="88" y="217" fill="#667085" font-size="13">⌕  Search products</text>
+    <rect x="72" y="245" width="482" height="68" rx="9" fill="#fff1cb"/>
+    <text x="91" y="271" fill="#7c4d11" font-size="11" font-weight="700">HOT DEAL • LIMITED TIME</text>
+    <text x="91" y="296" fill="#19212f" font-size="18" font-weight="700">Big savings on electronics</text>
+    <rect x="72" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="80" y="333" width="134" height="35" rx="5" fill="#f1f3ff"/>
+    <text x="92" y="357" fill="#315efb" font-size="22">◉</text>
+    <text x="82" y="386" fill="#19212f" font-size="11" font-weight="700">Wireless headphones</text>
+    <text x="82" y="403" fill="#e28a00" font-size="11">★ 4.8  ₹1,799</text>
+    <rect x="82" y="408" width="73" height="18" rx="4" fill="#7c4d11"/>
+    <text x="89" y="421" fill="#fff" font-size="9">Add to cart</text>
+    <rect x="232" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="240" y="333" width="134" height="35" rx="5" fill="#fff4df"/>
+    <text x="252" y="357" fill="#9a5a21" font-size="22">◷</text>
+    <text x="242" y="386" fill="#19212f" font-size="11" font-weight="700">Smart Watch</text>
+    <text x="242" y="403" fill="#e28a00" font-size="11">★ 4.5  ₹2,499</text>
+    <rect x="392" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="400" y="333" width="134" height="35" rx="5" fill="#eaf7f3"/>
+    <text x="412" y="357" fill="#147d64" font-size="22">◒</text>
+    <text x="402" y="386" fill="#19212f" font-size="11" font-weight="700">Portable Speaker</text>
+    <text x="402" y="403" fill="#e28a00" font-size="11">★ 4.3  ₹1,299</text>
+    <text x="72" y="442" fill="#9b5b13" font-size="12" font-weight="700">Dense promotions • inconsistent action placement</text>
+
+    <rect x="646" y="188" width="482" height="46" rx="8" fill="#fff" stroke="#315efb" stroke-width="2"/>
+    <text x="662" y="217" fill="#667085" font-size="13">⌕  Search wireless headphones</text>
+    <rect x="646" y="245" width="482" height="68" rx="9" fill="#e8edff"/>
+    <text x="665" y="271" fill="#315efb" font-size="11" font-weight="700">TODAY’S HIGHLIGHT</text>
+    <text x="665" y="296" fill="#19212f" font-size="18" font-weight="700">Sound that moves with you</text>
+    <rect x="646" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#d9e2ff"/>
+    <rect x="654" y="333" width="134" height="35" rx="5" fill="#f1f3ff"/>
+    <text x="666" y="357" fill="#315efb" font-size="22">◉</text>
+    <text x="656" y="386" fill="#19212f" font-size="11" font-weight="700">Wireless headphones</text>
+    <text x="656" y="403" fill="#e28a00" font-size="11">★ 4.8  ₹1,799</text>
+    <rect x="716" y="408" width="72" height="18" rx="4" fill="#315efb"/>
+    <text x="729" y="421" fill="#fff" font-size="9">Add</text>
+    <rect x="806" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="814" y="333" width="134" height="35" rx="5" fill="#fff4df"/>
+    <text x="826" y="357" fill="#9a5a21" font-size="22">◷</text>
+    <text x="816" y="386" fill="#19212f" font-size="11" font-weight="700">Smart Watch</text>
+    <text x="816" y="403" fill="#e28a00" font-size="11">★ 4.5  ₹2,499</text>
+    <rect x="966" y="325" width="150" height="96" rx="8" fill="#fff" stroke="#e8ecf2"/>
+    <rect x="974" y="333" width="134" height="35" rx="5" fill="#eaf7f3"/>
+    <text x="986" y="357" fill="#147d64" font-size="22">◒</text>
+    <text x="976" y="386" fill="#19212f" font-size="11" font-weight="700">Portable Speaker</text>
+    <text x="976" y="403" fill="#e28a00" font-size="11">★ 4.3  ₹1,299</text>
+    <text x="646" y="442" fill="#147d64" font-size="12" font-weight="700">Prominent search • consistent actions • clear hierarchy</text>
+  </g>
+</svg>

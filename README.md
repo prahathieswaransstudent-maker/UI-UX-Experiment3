@@ -9,6 +9,16 @@ This repository contains a complete interactive submission for a heuristic evalu
 
 The experiment includes original and improved variants for both apps, a Nielsen heuristic comparison, timed task measurement, completion tracking, and a printable lab report.
 
+## Preview
+
+### Interactive experiment
+
+![Interactive experiment preview showing the task flow, shopping prototype, and behavior metrics](images/experiment-preview.svg)
+
+### A/B design variants
+
+![Side-by-side original and improved shopping interface comparison](images/ab-variants.svg)
+
 ## Files
 
 - `index.html` — interactive A/B prototype
